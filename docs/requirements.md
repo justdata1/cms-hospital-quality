@@ -102,10 +102,20 @@ The candidate result grain is facility plus measure plus reporting period plus s
 Requirements and the starter repository establish scope. Data downloads, database implementation, and analysis are subsequent milestones and must not be represented as completed features.
 
 ## Source references
-CMS hospital datasets: https://data.cms.gov/provider-data/datasets?theme%5B0%5D=Hospitals
+The project uses real, publicly reported hospital-level data from the Centers for Medicare & Medicaid Services CMS Provider Data Catalog. These files do not contain individual patient records.
 
-Timely and Effective Care Hospital: https://data.cms.gov/provider-data/dataset/yv7e-xc69
+[CMS Provider Data Catalog hospital datasets](https://data.cms.gov/provider-data/datasets?theme%5B0%5D=Hospitals)
+Browse the official hospital datasets and related documentation.
 
-CMS Hospital Data Dictionary reference reviewed during planning: https://data.cms.gov/provider-data/sites/default/files/data_dictionaries/hospital/HOSPITAL_Data_Dictionary.pdf
+[Hospital General Information](https://data.cms.gov/provider-data/dataset/xubh-q36u)
+Dataset xubh-q36u provides facility identifiers, names, locations, hospital types, ownership, and ratings. Our downloaded snapshot contains 5,419 records.
 
-Use a dictionary matching the release actually downloaded. The July 2026 reference inspected during planning does not establish which release is latest.
+[Timely and Effective Care Hospital](https://data.cms.gov/provider-data/dataset/yv7e-xc69)
+Dataset yv7e-xc69 provides hospital-level measure results, samples, footnotes, and reporting periods. Our downloaded snapshot contains 138,084 records.
+
+[CMS Hospital Data Dictionary](https://data.cms.gov/provider-data/sites/default/files/data_dictionaries/hospital/HOSPITAL_Data_Dictionary.pdf)
+The dictionary defines source fields and measures. Both downloaded dataset metadata records link to this PDF; the downloaded version identifies itself as July 2026.
+
+Both dataset metadata records list August 13, 2026 as the release date and July 22, 2026 as the modification date. Files were downloaded October 26, 2026. Release, modification, download, and measurement dates serve different purposes; reporting periods must be read from the source records.
+
+See source_manifest.json and source_acquisition.md in the docs folder for exact CSV download URLs, source metadata endpoints, file checksums, and reproduction instructions. These links describe the acquired snapshot and do not establish which future release is latest.
