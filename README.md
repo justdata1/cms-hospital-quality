@@ -31,3 +31,4 @@ See [project requirements](docs/requirements.md) for scope, proposed entities, i
 
 ## Next step
 Profile the downloaded snapshot: identifiers, result grain, facility joins, periods, missingness, and footnotes. Then select three to five measures before writing DDL.
+
