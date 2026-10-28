@@ -98,5 +98,29 @@
     "compatibility_note": "Both CMS dataset metadata records explicitly reference this dictionary. July 2026 version verified from PDF page 2."
   },
   "same_release_date": true,
-  "snapshot_directory_relative": "data/raw/20261026T233809576060Z"
+  "snapshot_directory_relative": "data/raw/20261026T233809576060Z",
+  "supplementary_datasets": [
+    {
+      "identifier": "y9us-9xdf",
+      "title": "Footnote Crosswalk",
+      "source_page": "https://data.cms.gov/provider-data/dataset/y9us-9xdf",
+      "metadata_url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/y9us-9xdf",
+      "download_url": "https://data.cms.gov/provider-data/sites/default/files/resources/f29bb7c812e242f6edfef0a4b7d0eaca_1760630713/Footnote_Crosswalk.csv",
+      "release_date": "2026-08-13",
+      "modified_date": "2025-09-18",
+      "downloaded_at_utc": "2026-10-28T01:44:21Z",
+      "filename": "Footnote_Crosswalk.csv",
+      "sha256": "5214e1468fb04c5cdeac8920f2c446cccaa65e2f6f929424cd228042a52d963e",
+      "bytes": 3456,
+      "row_count": 32,
+      "columns": [
+        "Footnote",
+        "Footnote Text"
+      ],
+      "encoding": "UTF-8",
+      "snapshot_directory_relative": "data/raw/20261028T014421Z_footnote_crosswalk",
+      "purpose": "Footnote code definitions required by DS01; the data dictionary references FOOTNOTE_CROSSWALK.CSV but does not include the text.",
+      "same_release_date_as_core_datasets": true
+    }
+  ]
 }

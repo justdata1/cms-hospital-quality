@@ -3,7 +3,7 @@
 A PostgreSQL relational database project using public CMS hospital information and quality measures.
 
 ## Status
-Requirements and source acquisition are complete. Downloaded the August 13, 2026 CMS release: 5,419 hospital records and 138,084 timely-care records, plus the linked July 2026 dictionary. See [acquisition notes](docs/source_acquisition.md) and [manifest](docs/source_manifest.json). Data profiling, database implementation, and analysis are next.
+Requirements and source acquisition are complete. Downloaded the August 13, 2026 CMS release: 5,419 hospital records and 138,084 timely-care records, plus the linked July 2026 dictionary. See [acquisition notes](docs/source_acquisition.md) and [manifest](docs/source_manifest.json). Data profiling (step 2) and measure selection (step 3) are complete; see the [data profile](docs/data_profile.md) and [selected measures](docs/measures.md). Database design is next.
 
 ## Scope
 One documented CMS release, Hospital General Information, and three to five measures from Timely and Effective Care Hospital. Compare reported measures by state, ownership, and hospital type with explicit treatment of missing values, footnotes, and reporting periods.
@@ -30,5 +30,5 @@ See [project requirements](docs/requirements.md) for scope, proposed entities, i
 [CMS Provider Data Catalog](https://data.cms.gov/provider-data/datasets?theme%5B0%5D=Hospitals). Preserve source attribution and release metadata. Results will be descriptive, with measure definitions and coverage limitations documented.
 
 ## Next step
-Profile the downloaded snapshot: identifiers, result grain, facility joins, periods, missingness, and footnotes. Then select three to five measures before writing DDL.
+Step 4: draw the ER diagram and write the data dictionary, field mappings, and result grain for the five selected measures.
 
